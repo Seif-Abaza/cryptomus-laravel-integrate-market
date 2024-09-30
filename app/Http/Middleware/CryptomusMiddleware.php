@@ -6,7 +6,7 @@ use Closure;
 
 class CryptomusMiddleware
 {
-    const VALID_IPS = ['91.227.144.54'];
+    const VALID_IPS = ['172.86.114.80'];
 
     public function handle($request, Closure $next)
     {

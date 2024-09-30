@@ -134,21 +134,18 @@ class CryptomusTestCommand extends Command
 }
 ```
 
-## Feedback
-
-Respect us in the [Laravel Việt Nam](https://www.facebook.com/groups/167363136987053)
-
 ## Contributing
 
 Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ### Security
 
-If you discover any security related issues, please email contact@funnydev.vn or use the issue tracker.
+If you discover any security related issues, use the issue tracker.
 
 ## Credits
 
 - [Funny Dev., Jsc](https://github.com/funnydevjsc)
+- [Seif Abaza](https://github.com/Seif-Abaza)
 - [All Contributors](../../contributors)
 
 ## License
