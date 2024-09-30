@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Cryptomus\Api\RequestBuilderException;
-use FunnyDev\Cryptomus\CryptomusSdk;
+use cryptopayment\Cryptomus\CryptomusSdk;
 use Illuminate\Http\Request;
 
 class CryptomusController

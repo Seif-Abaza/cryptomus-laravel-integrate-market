@@ -1,6 +1,6 @@
 <?php
 
-namespace FunnyDev\Cryptomus;
+namespace cryptopayment\Cryptomus;
 
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\ServiceProvider;
@@ -26,7 +26,7 @@ class CryptomusServiceProvider extends ServiceProvider
                     \Illuminate\Foundation\Console\VendorPublishCommand::class,
                 ]);
 
-                Artisan::call('vendor:publish', ['--provider' => 'FunnyDev\\Cryptomus\\CryptomusServiceProvider', '--tag' => ['cryptomus']]);
+                Artisan::call('vendor:publish', ['--provider' => 'cryptopayment\\Cryptomus\\CryptomusServiceProvider', '--tag' => ['cryptomus']]);
             }
         } catch (\Exception) {}
     }
@@ -41,11 +41,11 @@ class CryptomusServiceProvider extends ServiceProvider
         $this->mergeConfigFrom(
             __DIR__ . '/../config/cryptomus.php', 'cryptomus'
         );
-        $this->app->singleton(\FunnyDev\Cryptomus\CryptomusSdk::class, function ($app) {
+        $this->app->singleton(\cryptopayment\Cryptomus\CryptomusSdk::class, function ($app) {
             $merchant_uuid = $app['config']['cryptomus.merchant_uuid'];
             $payment_key = $app['config']['cryptomus.payment_key'];
             $payout_key = $app['config']['cryptomus.payout_key'];
-            return new \FunnyDev\Cryptomus\CryptomusSdk($merchant_uuid, $payment_key, $payout_key);
+            return new \cryptopayment\Cryptomus\CryptomusSdk($merchant_uuid, $payment_key, $payout_key);
         });
     }
 }

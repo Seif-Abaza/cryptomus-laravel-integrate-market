@@ -1,6 +1,6 @@
 <?php
 
-namespace FunnyDev\Cryptomus;
+namespace cryptopayment\Cryptomus;
 
 use Cryptomus\Api\Client;
 use Cryptomus\Api\Payment;

@@ -37,7 +37,7 @@ composer require funnydevjsc/cryptomus-laravel-integrate
 #### Step 3. Publish the controller file and config file
 
 ```bash
-php artisan vendor:publish --provider="FunnyDev\Cryptomus\CryptomusServiceProvider" --tag="cryptomus"
+php artisan vendor:publish --provider="cryptopayment\Cryptomus\CryptomusServiceProvider" --tag="cryptomus"
 ```
 
 If publishing files fails, please create corresponding files at the path `config/cryptomus.php` and `app\Http\Controllers\CryptomusControllers.php` from this package. And you can also further customize the CryptomusControllers.php file to suit your project.
@@ -103,7 +103,7 @@ Then your IPN (Webhook) URL will be something like https://yourdomain.ltd/api/cr
 
 namespace App\Console\Commands;
 
-use FunnyDev\Cryptomus\CryptomusSdk;
+use cryptopayment\Cryptomus\CryptomusSdk;
 use Illuminate\Console\Command;
 
 class CryptomusTestCommand extends Command
