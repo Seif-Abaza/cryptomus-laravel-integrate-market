@@ -1,22 +1,20 @@
 {
-    "name": "funnydevjsc/cryptomus-laravel-integrate",
+    "name": "cryptopayment/cryptomus-laravel-integrate-market",
     "description": "Laravel package for cryptomus.com",
     "type": "library",
     "license": "MIT",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "autoload": {
         "psr-4": {
-            "FunnyDev\\Cryptomus\\": "src/"
+            "cryptopayment\\Cryptomus\\": "src/"
         }
     },
-    "authors": [
-        {
-            "name": "Funny dev., Jsc",
-            "email": "contact@funnydev.vn",
-            "homepage": "https://github.com/funnydevjsc"
-        }
-    ],
-    "homepage": "https://github.com/funnydevjsc/cryptomus-laravel-integrate",
+    "authors": [{
+        "name": "Seif Abaza",
+        "email": "seif.abaza@yandex.com",
+        "homepage": "https://github.com/Seif-Abaza"
+    }],
+    "homepage": "https://github.com/Seif-Abaza/cryptomus-laravel-integrate-market",
     "keywords": ["Laravel", "package", "payment", "cryptomus", "9pay", "sepay", "crypto", "bitcoin", "btc", "litecoin", "ltc", "usdt", "bsc"],
     "require": {
         "php": "^8.1",
@@ -30,7 +28,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "FunnyDev\\Cryptomus\\CryptomusServiceProvider"
+                "cryptopayment\\Cryptomus\\CryptomusServiceProvider"
             ]
         }
     },
